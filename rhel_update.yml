@@ -1,0 +1,7 @@
+---
+- name: Patch all servers
+  hosts: all
+  become: yes
+
+  roles:
+    - role: rhel_system_update

@@ -1,0 +1,7 @@
+---
+- name: Install Oracle 19c prerequisites
+  hosts: dbservers
+  become: yes
+
+  roles:
+    - oracle_setup_19c
